@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Timer{% endblock %}
+
+{% block content %}
+    <h1>Edit Timer</h1>
+
+    {{ include('timer/_form.html.twig', {'button_label': 'Update'}) }}
+    <br>
+
+    <a  class="btn btn-outline-secondary" href="{{ path('app_timer_index') }}">back to list</a>
+
+  
+
+
+   
+{% endblock %}

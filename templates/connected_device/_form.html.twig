@@ -1,0 +1,13 @@
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+    <br>
+ 
+
+<div class="btn-group" role="group" aria-label="Basic example">
+                   <button class="btn btn-outline-primary" >{{ button_label|default('Save') }}</button>
+        <a href="{{path('app_timer_new')}}" class="btn btn-outline-success" >Add Timer</a>
+            <a class="btn btn-outline-secondary"  href="{{ path('app_connected_device_index') }}">back to list</a>
+
+                 </div>
+{{ form_end(form) }}
+
